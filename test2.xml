@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+  <Gather action="/ivr/gather-digits" timeout="4" numDigits="1">
+    <Say voice="Polly.Emma" language="en-GB">
+      <prosody rate="100%">
+        <s>Hello and welcome to Test Restaurant</s>
+        <s>If you would like to make a booking press
+          <say-as interpret-as="digits">1</say-as>
+          <break />for other enquiries press
+          <say-as interpret-as="digits">2</say-as>
+        </s>
+      </prosody>
+    </Say>
+  </Gather>
+  <Redirect>/ivr/redirect</Redirect>
+</Response>
